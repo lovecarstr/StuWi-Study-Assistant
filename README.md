@@ -1,5 +1,8 @@
 # StuWi Study Assistant
 
+> **Team project** · DIT113, University of Gothenburg (spring 2024)  
+> **Team:** Erik Nisbet, Edvin Sanfridsson, Johannes Borg, Love Carlander Strandäng, Martin Lidgren
+
 <div style="text-align:center">
     <img src="/docs/images/StuWi-Transparent.png" alt="StuWi Study Assistant" width="400" />
 </div>
