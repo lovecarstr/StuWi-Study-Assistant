@@ -92,6 +92,7 @@ Before any steps below, clone or download the repo source code onto your local m
 
 1. Download & install SDK 21.0.2 & Maven 4.0.0 outlined in [Dependencies & Requirements](#dependencies--requirements)
 2. Run _mvn --version_ & _java --version_ in your machine's terminal to verify they've been installed correctly
+3. Set the `MONGODB_URI` environment variable to your MongoDB Atlas connection string
 
 ## Usage
 1. Connect the Wio Terminal to your computer using a USB-cable. Once the screen GUI interface shows up, the Wi-Fi has successfully connected. This may take a few seconds.

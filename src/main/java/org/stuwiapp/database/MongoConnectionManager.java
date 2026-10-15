@@ -8,7 +8,10 @@ public class MongoConnectionManager {
     private static MongoClient mongoClient;
 
     private static void createConnection() {
-        String connectionString = "mongodb+srv://stuwiuser:stuwipass@stuwi.tonjfsu.mongodb.net/?retryWrites=true&w=majority&appName=StuWi";
+        String connectionString = System.getenv("MONGODB_URI");
+        if (connectionString == null || connectionString.isBlank()) {
+            throw new IllegalStateException("Set the MONGODB_URI environment variable to your MongoDB connection string");
+        }
         ServerApi serverApi = ServerApi.builder().version(ServerApiVersion.V1).build();
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(new ConnectionString(connectionString))
